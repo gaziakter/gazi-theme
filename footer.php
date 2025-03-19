@@ -1,34 +1,9 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Gazi_Theme
- */
-
-?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gazi-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gazi-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gazi-theme' ), 'gazi-theme', '<a href="https://gaziakter.com/">Gazi Akter</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; <?php echo date('Y'); ?> Gazi Akter. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
