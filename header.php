@@ -10,9 +10,9 @@
 <header class="bg-light py-3">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <?php if (has_custom_logo()) {
-                the_custom_logo();
-            } ?>
+            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                <?php bloginfo('name'); ?>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,14 +20,15 @@
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'primary',
-                    'container' => false,
-                    'menu_class' => 'navbar-nav ms-auto',
-                    'fallback_cb' => '__return_false',
-                    'depth' => 2,
-                    'walker' => new Bootstrap_NavWalker()
+                    'container'      => false,
+                    'menu_class'     => 'navbar-nav ms-auto',
+                    'fallback_cb'    => '__return_false',
+                    'depth'          => 2,
+                    'walker'         => new Bootstrap_NavWalker(),
                 ]);
                 ?>
             </div>
         </nav>
     </div>
 </header>
+

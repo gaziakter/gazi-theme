@@ -40,3 +40,9 @@ function gazi_theme_woocommerce_support() {
     add_theme_support('woocommerce');
 }
 add_action('after_setup_theme', 'gazi_theme_woocommerce_support');
+
+
+
+
+// Inclode file
+require_once get_template_directory() . '/inc/class-bootstrap-navwalker.php';
