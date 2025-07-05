@@ -13,32 +13,25 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-light.png" alt="Logo Light" class="logo-default"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-dark.png" alt="Logo Dark" class="logo-scrolled"></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul><a href="talk.html" class="btn btn-green ms-3">Let's Talk</a>
-        </div>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="<?php home_url() ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-light.png" alt="Logo Light" class="logo-default">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-dark.png" alt="Logo Dark" class="logo-scrolled">
+      </a>
+
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Right-side menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <?php gazi_primary_menu(); ?>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+

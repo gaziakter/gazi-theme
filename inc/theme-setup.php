@@ -30,7 +30,7 @@ function gazi_theme_setup() {
 
     register_nav_menus(
         array(
-            'main-menu' => __('Primary Menu','gazi-theme'),
+            'primary-menu' => __('Primary Menu','gazi-theme'),
             'footer-menu' => __('Footer Menu','gazi-theme'),
         )
     );

@@ -112,6 +112,25 @@ div.title-text {
   background-color: var(--brand-dark-green);
 }
 
+ul.navbar-nav li.nav-item:last-child {
+    background-color: var(--brand-green);
+    color: var(--white) !important;
+    padding: 5px 12px;
+    font-size: 1.1rem;
+    border: 1px solid var(--brand-green);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+ul.navbar-nav li.nav-item {padding: 6px 0px;}
+
+ul.navbar-nav li.nav-item:last-child:hover,
+ul.navbar-nav li.nav-item:last-child:focus,
+ul.navbar-nav li.nav-item:last-child:active {
+  background-color: var(--brand-dark-green);
+  color: var(--white) !important;
+}
+
 .btn-green-border {
   color: var(--brand-green);
   padding: 0.8rem 2rem;
