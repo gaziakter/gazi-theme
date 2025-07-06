@@ -11,19 +11,7 @@ echo get_template_part( 'template-parts/page-header');
                   <?php echo get_template_part( 'template-parts/content'); ?>
                   </div>
             <?php endwhile; ?>
-
-
-        <nav class="mt-4" aria-label="Page navigation">
-            <?php
-            the_posts_pagination(array(
-                'mid_size' => 2,
-                'prev_text' => '&laquo; Previous',
-                'next_text' => 'Next &raquo;',
-                'screen_reader_text' => 'Posts navigation',
-                'class' => 'pagination justify-content-center',
-            ));
-            ?>
-        </nav>
+        <?php gazi_pagination(); ?>
 
     <?php else : ?>
         <p class="text-center">No posts found.</p>

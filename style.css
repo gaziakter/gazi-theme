@@ -50,3 +50,62 @@ Tags: blog, custom-logo, one-column, two-columns, accessibility-ready, theme-opt
     text-decoration: underline;
 }
 
+/*======= Blog Page ========*/
+
+/* Zoom In #1 Image Hover */
+.hover01 figure {
+    overflow: hidden;
+    margin: 0;
+    border-radius: 0.5rem;
+}
+
+.hover01 figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+    border-radius: 0.5rem;
+}
+
+.hover01:hover figure img {
+    transform: scale(1.1);
+}
+
+/* Title hover effect */
+.hover-title {
+    color: #212529; /* default Bootstrap dark */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hover-title:hover {
+    color: #198754 !important; /* Bootstrap 'success' green */
+    text-decoration: underline;
+}
+
+/*================== Pagination of Blog post ==========*/
+/* Custom style for pagination links */
+.custom-page-link {
+    padding: 0.6rem 1rem;
+    color: #212529;
+    border: 1px solid #dee2e6;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+.custom-page-link:hover {
+    background-color: #e9ecef;
+    color: #198754;
+    text-decoration: none;
+}
+
+/* Active page */
+.page-item.active .custom-page-link {
+    background-color: #198754;
+    border-color: #198754;
+    color: #fff;
+}
+
+
+
+
