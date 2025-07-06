@@ -10,3 +10,43 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gazi-theme
 Tags: blog, custom-logo, one-column, two-columns, accessibility-ready, theme-options
 */
+
+/*============= Index page ===============*/
+/* Hero/Header Section */
+
+/* Page Header Section */
+.page-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header.no-image {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 60px 0;
+}
+
+.page-header .header-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+}
+
+.page-header .title-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card .card-title a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.card .card-title a:hover {
+    text-decoration: underline;
+}
+

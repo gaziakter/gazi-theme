@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand" href="<?php home_url() ?>">
+      <a class="navbar-brand" href="<?php echo home_url() ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-light.png" alt="Logo Light" class="logo-default">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-dark.png" alt="Logo Dark" class="logo-scrolled">
       </a>

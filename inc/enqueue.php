@@ -11,6 +11,7 @@ function gazi_enqueue_assets() {
     wp_enqueue_style( 'unpkg', 'https://unpkg.com/aos@2.3.4/dist/aos.css', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'gazi-main', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animations.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
 
     wp_enqueue_script( 'unpkg', 'https://unpkg.com/aos@2.3.4/dist/aos.js', array(), 1.1, true );
     wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), 1.1, true );
